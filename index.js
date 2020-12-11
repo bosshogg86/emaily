@@ -6,6 +6,7 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 require('./model/User');
 require('./services/passport');
+require('dotenv').config();
 
 mongoose.connect(keys.mongoURI, {
   useNewUrlParser: true,
