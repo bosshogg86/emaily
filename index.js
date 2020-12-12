@@ -4,9 +4,10 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 const bodyParser = require('body-parser');
 const keys = require('./config/keys');
-require('./model/User');
+require('./models/User');
+require('./models/Survey');
 require('./services/passport');
-require('dotenv').config();
+// require('dotenv').config();
 
 mongoose.connect(keys.mongoURI, {
   useNewUrlParser: true,
@@ -39,6 +40,7 @@ if (process.env.NODE_ENV === 'production') {
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
