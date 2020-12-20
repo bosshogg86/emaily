@@ -13,7 +13,7 @@
 
 ## Description
 
-Emaily is an email campaign service. A user may pay for credits to use Emaily. Once a user has purchased credits they may create and send an email campaign.
+Emaily is an email campaign service. A user may pay for credits to use Emaily. Once a user has purchased credits they may create, send and manage an email campaign.
 
 ## Installation
 
